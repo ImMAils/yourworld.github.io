@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+
+<html lang="ru">
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<style type="text/css">
+html {height: 100%;}
+body {
+    background: url(bg.jpg) repeat-y #fc0;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+	background-position: center;
+	height: 100%;
+	min-height: 100%;
+	margin: 0;
+}h1 {
+	/*font-family: Arial, Helvetica, sans-serif; */
+	color: #962300;
+	font-size: 25px;
+    font-family: Minecraft;
+}
+p {
+	/*#font-family: Arial, Helvetica, sans-serif;*/
+	color: #777;
+	font-size: 12px;
+    font-family: Minecraft;
+}
+#bloctxt {
+	border-left-width: 5px;
+	border-left-style: solid;
+	border-left-color: #962300;
+	padding-left: 10px;
+	position: absolute;
+	top:5%;
+	left: 50%;
+	width: 600px;
+	margin-left: -260px
+}
+#wrapper {
+	padding: 2%;
+	margin: 0 auto;
+}
+#border {
+	background-color: #9BA3C4;
+	border: 0px solid #9BA3C4;
+	-webkit-border-radius: 0px;
+	-moz-border-radius: 0px;
+	border-radius: 0px;
+	margin: 0 auto;
+	padding: 0px;
+	width:854px;
+	height:480px;
+	box-shadow: 0 0 10px 2px #9BA3C4;
+}*/
+#canvas {
+	584px; 
+	480px;
+}
+
+/*#MMFCanvas {
+	-webkit-box-shadow:  0px 0px 4px 4px rgba(0, 0, 0, 0.25); 
+    box-shadow:  0px 0px 4px 4px rgba(0, 0, 0, 0.25);
+}*/
+</style>
+
+  <title>Your World ❤</title>
+
+	<script>
+	   	// Detection of old browsers that do not support the canvas element
+		// Falls back to a default page
+	    if (!document.createElement("canvas").getContext)
+	    {
+			window.open("http://www.clickteam.com/html5-fallback", "_self");
+		}
+	</script>
+	
+  	<!-- EXTRASOURCES -->
+	<!-- Loads the Javascript code...-->
+  	<script src="src/Runtime.js"></script>
+  	
+  <!--<script>
+
+	// Detects if the html file is ran locally.
+	// You can remove this code for the final version
+	if (window.location.protocol == "file:")
+	{
+		document.write('<div id="bloctxt">');
+		document.write('<h1>The application cannot be run...</h1>');
+		document.write('<p>HTML browsers do not allow you to launch data files directly from the file system.<br>');
+		document.write('A drag & drop of the html file on a web-browser window will not work, on any machine.<br>');
+		document.write('Please use the Build & Run option (it opens a local web server) to run your application,<br>') 
+		document.write('or upload your application folder to a remote web-server, and start it from there...</p>');
+		document.write('</div>');
+		throw new error("Cannot run application");
+	}
+  </script>-->
+</head>
+ <head>
+    <style>
+      @font-face { font-family: Minecraft; src: url('Minecraft.ttf'); } 
+      mc {
+         font-family: Minecraft
+      }
+    </style>
+ </head>
+ <head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Логотип окда</title>
+  <style>
+   .centeri {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 1%;
+  width: 25%;
+}
+  </style>
+ </head>
+ <body>
+  <img src="header.png" alt="header.png" class="centeri"> 
+ </body>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Начать</title>
+  <style>
+   .centerii {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 1%;
+  width: 30%;
+}
+  </style>
+ </head>
+ <body>
+ <a href="https://discord.gg/vbhfgUp">
+  <img src="start.png" alt="header.png" class="centerii"> 
+ </a>
+ </body>
+<!-- -->
+<!-- This is where we create the Canvas element that will contain the application...-->
+<body>
+    <div id="wrapper">
+	    <div id="border">
+		    <div id="canvas">
+			    <canvas id="MMFCanvas" width="854" height="480">
+				    <p>Your browser does not support Canvas.</p>
+			    </canvas>   
+		    </div>
+	    </div>
+    </div>  
+    <script>
+        // RUNTIMESTART
+        // This is where the HTML5 runtime is actually started
+	    window.addEventListener("load", windowLoaded, false);
+	    function windowLoaded()
+	    {
+		    // Calls the runtime
+		    // First parameter : name of the canvas element
+		    // Second parameter : path to the cch file. Images and sounds must lay beside this file
+		    new Runtime("MMFCanvas", "resources/yw.cch");
+	    }
+        // RUNTIMESTARTEND
+    </script>
+
+</body>
+  <head>
+    <script src="https://cdn.jsdelivr.net/gh/leonardosnt/mc-player-counter/dist/mc-player-counter.min.js"></script>
+    <meta charset="utf-8">
+    <title>Два разных текста на одной строке</title>
+  <style>
+   .whitel, .whiter, .bluec, .probel {
+    float: left;
+    color:#FFFFFF;
+    margin-left: 10px;
+    font-size: 1vw;
+    text-align: left;
+   }
+   .whiter {
+    float: left;
+    color:#FFFFFF;
+    margin-left: 10px;
+    font-size: 1vw;
+    text-align: right;
+   }
+   .bluec {
+    color:#00FFFF;
+    margin-left: 10px;
+    font-size: 1vw;
+	text-align: center;
+   }
+   .probel {
+    color:#00FFFF;
+    margin-left: 34%;
+    font-size: 2vw;	
+	}
+  </style>
+ </head>
+ <body>
+  <p class="probel"></p>
+  <p class="whitel">На сервере</p>
+  <p class="bluec"><b><span data-playercounter-ip="yourworld.ml">0</span></b> членов экипажа</p>
+  <p class="whiter">Среди нас!</p>
+  <div style="clear: left"></div>
+  <div style="clear: right"></div>
+ </body>
+<!-- <head>
+  <meta charset="utf-8">
+  <title>padding</title>
+  <style>
+   .layer {
+    /*background: #fc3; /* Цвет фона */
+    border: 0px solid #B90000;;  /* Параметры рамки */
+    margin-left: 00px;
+    color:#101010;
+    font-family: Minecraft;
+   }
+  </style>
+ </head>
+ <body>
+  <div class="layer"> </div>
+   <div class="layer" align="center">Ай ай ай</div>
+    <div class="layer" align="center">О мой бог чёрт возьми насмерть</div>
+     <div class="layer" align="center">Хорошая работа,</div>
+      <div class="layer" align="center">антон</div>
+ </body> -->
+ <body>
+<script>
+if(/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)){
+  confirmmob()
+}else{
+  document.write("not mobile");
+}
+
+function confirmmob() {
+  var txt;
+  var r = confirm("Перейти на мобильную версию сайта?");
+  if (r == true) {
+    window.open("http://f0476060.xsph.ru/mobile_view_index1.html","_self")
+  }
+  document.getElementById("demo").innerHTML = txt;
+}
+</script>
+</body>
+
+</html>
